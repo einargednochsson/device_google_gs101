@@ -158,7 +158,6 @@
 
     <!-- Optional IPsec algorithms enabled by this device, defaulting to empty. OEMs can override
          it by providing a list of algorithm names in an overlay config.xml file.
-
          As Android releases new versions, more algorithms are becoming mandatory. Mandatory
          algorithms will be automatically enabled on the device. Optional algorithms need
          to be explicitly declared in this resource to be enabled.
@@ -270,4 +269,11 @@
         <item>"com.shannon.imsservice"</item>
         <item>"com.android.phone"</item>
     </string-array>
+    
+     <!-- The properties of a UDFPS sensor in pixels -->
+    <integer-array name="config_udfps_sensor_props">
+      <item>720</item>  <!-- sensorLocationX -->
+      <item>2364</item> <!-- sensorLocationY -->
+      <item>142</item>  <!-- sensorRadius -->
+    </integer-array>
 </resources>
