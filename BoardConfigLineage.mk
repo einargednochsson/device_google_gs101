@@ -17,7 +17,7 @@ BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := device/google/gs101/vendor_dlkm.mo
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/google/gs101/private/google-modules
 
 # Manifests
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/stag/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += device/google/gs101/manifest_radio.xml
 
 # Partitions
@@ -40,7 +40,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor
 
 # Reserve space for gapps install
-ifneq ($(WITH_GMS),true)
+ifneq ($(WITH_GAPPS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 614400000
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1

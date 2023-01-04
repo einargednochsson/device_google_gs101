@@ -1,0 +1,8 @@
+[
+  {
+    "repository": "android_kernel_google_gs101",
+    "target_path": "kernel/google/gs101/private/gs-google",
+    "remote": "lineage",
+    "branch": "lineage-20"
+  }
+]
