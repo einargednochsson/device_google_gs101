@@ -86,6 +86,9 @@ endif
 ifneq ($(PRODUCT_BUILD_VBMETA_IMAGE),false)
 AB_OTA_PARTITIONS += vbmeta
 endif
+ifneq ($(PRODUCT_BUILD_PVMFW_IMAGE),false)
+AB_OTA_PARTITIONS += pvmfw
+endif
 
 # EMULATOR common modules
 BOARD_EMULATOR_COMMON_MODULES := liblight
@@ -159,6 +162,8 @@ BOARD_USE_DEC_SW_CSC := true
 BOARD_USE_ENC_SW_CSC := true
 BOARD_SUPPORT_MFC_ENC_RGB := true
 BOARD_USE_BLOB_ALLOCATOR := false
+BOARD_SUPPORT_MFC_ENC_BT2020 := true
+
 ########################
 
 BOARD_SUPER_PARTITION_SIZE := 8531214336
