@@ -43,4 +43,10 @@
 
     <string name="proximity_sensor_secondary_type" translatable="false">android.sensor.proximity</string>
     <item name="proximity_sensor_secondary_threshold" translatable="false" format="float" type="dimen">5</item>
+    
+     <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#ffffffff</color>
+
+    <!-- Udfps HBM provider class name -->
+    <string name="config_udfpsDisplayModeProviderComponent">com.android.systemui.biometrics.PixelUdfpsDisplayModeProvider</string>
 </resources>
