@@ -866,6 +866,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	Iwlan
 
+# Remove some prebuilt apps
+PRODUCT_PACKAGES += \
+	 RemovePackagesDevice
+
+
 #Iwlan test app for userdebug/eng builds
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES += \
