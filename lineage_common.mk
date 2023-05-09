@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay-stag
+DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay-derp
 
 # AiAi Config
 PRODUCT_COPY_FILES += \
